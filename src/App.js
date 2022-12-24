@@ -1,5 +1,10 @@
 function App(){
-  return <p style={{ textDecoration: "line-through" }}> This is paragraph</p>
+
+  let isLineT = false;
+
+  const myLTdata = { textDecoration: "line-through" };
+
+  return <p style={ isLineT? myLTdata : null }> This is paragraph</p>
 }
 
 export default App
