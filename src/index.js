@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-function hi(){
-  console.log("hello")
+function colorch(){
+  console.log("color changed");
+  document.getElementById("root").style.color="red";
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
+    <h1>Welcome to HOME page</h1>
     <App />
-    <button onClick={hi}>Click Here</button>
+    <button onClick={colorch}>Click Here</button>
   </div>
 );
